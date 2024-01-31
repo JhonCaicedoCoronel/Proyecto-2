@@ -35,9 +35,10 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Yumi
+ * @author LenierG
  */
 public class InicioSesionController implements Initializable {
+    private BienvenidoController bienvenidoController;
     private ArrayList <Usuario> ListaUsuarios= new ArrayList<>();
     public static Usuario usuarioSeleccionado;
     @FXML
@@ -70,6 +71,9 @@ public class InicioSesionController implements Initializable {
         
         // TODO
     }
+     public void setBienvenidoController(BienvenidoController bienvenidoController) {
+        this.bienvenidoController = bienvenidoController;
+    }
      private ArrayList<Usuario>IniciarUsuarios() {//Metodo que carga los usuarios en el sistema
           ArrayList<Usuario> listaUsu = new ArrayList<>();
          try{
@@ -89,31 +93,39 @@ public class InicioSesionController implements Initializable {
          return listaUsu;
      }
      @FXML
-     void IniciarSesion(ActionEvent ae){
+     void IniciarSesion(ActionEvent ae) throws IOException{
          boolean despliegue=false;
         for(Usuario usu: ListaUsuarios){
             if(usu.getUsuario().equals(usuario.getText())&& usu.getContra().equals(contra.getText())){
                 despliegue=true; 
                 usuarioSeleccionado=usu;
                 
-            }
+            }}
             
-            if(despliegue==true){
-                 Alert al=new Alert(Alert.AlertType.INFORMATION);
-                al.setContentText("credenciales validas");
-               al.setTitle("Informacion");
-                al.showAndWait();
+           if (despliegue) {
+        Alert al = new Alert(Alert.AlertType.INFORMATION);
+        al.setContentText("Credenciales válidas");
+        al.setTitle("Información");
+        al.showAndWait();
+
+        // Establece el usuarioActual en el controlador de Bienvenido
+        FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/Vistas/Bienvenido.fxml"));
+        Scene sc = new Scene(fxmlloader.load(), 807, 480);
+
+        BienvenidoController bienvenidoController = fxmlloader.getController();
+        bienvenidoController.setUsuarioActual(usuarioSeleccionado);
+
                CambiarEscena();
             }else{
                  Alert al=new Alert(Alert.AlertType.INFORMATION);
                 al.setContentText("credenciales no validas");
                al.setTitle("Informacion"); 
                al.showAndWait();
-            }
-        }
+            }}
+        
         
          
-     }
+     
      void CambiarEscena(){
          try{
          Stage actual=(Stage) usuario.getScene().getWindow();
