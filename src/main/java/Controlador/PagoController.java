@@ -34,7 +34,7 @@ import modelo.DatosIncompletosExcpetion;
 /**
  * FXML Controller class
  *
- * @author LenierG
+ * @author Jhon Caicedo
  */
 public class PagoController implements Initializable {
     TextField txtnumero=new TextField();
