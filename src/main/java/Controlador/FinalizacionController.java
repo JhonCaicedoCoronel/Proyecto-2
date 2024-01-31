@@ -107,7 +107,7 @@ public class FinalizacionController implements Initializable {
         try {
             // Crear un BufferedWriter para escribir en el archivo
             BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/Textos/Pagos.txt",true));
-            writer.write("\n"+pago.getIdpago()+","+pago.getCodigoReserva()+","+pago.getTotalRserva()+","+pago.getDescuento()+","+pago.getFormaPago()+","+pago.getTotalPagar());
+            writer.write(pago.getIdpago()+","+pago.getCodigoReserva()+","+pago.getTotalRserva()+","+pago.getDescuento()+","+pago.getFormaPago()+","+pago.getTotalPagar()+"\n");
 
             writer.close();
 
