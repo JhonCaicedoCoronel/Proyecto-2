@@ -14,7 +14,7 @@ import modelo.Promocion;
 
 /**
  *
- * @author Yumi
+ * @author Danny López
  */
 public class PromocionesController {
     public static ArrayList<Promocion> promociones;
