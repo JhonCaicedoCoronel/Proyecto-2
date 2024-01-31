@@ -1,0 +1,18 @@
+AV900,Guayaquil,Rio de Janeiro,20,08:00,15:45,Boeing 737,1200.50
+AV901,Rio de Janeiro,Guayaquil,17,17:30,23:15,Boeing 737,1150.75
+AV902,Guayaquil,Barcelona,20,08:00,15:45,Boeing 737,1200.50
+AV903,Barcelona,Guayaquil,4,16:00,20:45,Airbus A320,890.25
+AV904,Manta,Barcelona,8,06:45,14:30,Airbus A320,950.80
+AV905,Barcelona,Manta,4,16:00,20:45,Airbus A320,890.25
+AV906,Quito,Toronto,8,10:30,18:15,Boeing 787,1500.00
+AV907,Toronto,Quito,7,20:45,04:30,Boeing 787,1450.50
+AV908,Guayaquil,Cali,2,12:15,14:45,Airbus A321,720.30
+AV909,Cali,Guayaquil,2,16:30,19:00,Airbus A321,680.75
+AV910,Manta ,Mexico,2,08:00,10:30,Boeing 737,550.00
+AV911,Mexico,Manta City,2,12:45,15:15,Boeing 737,525.75
+AV912,Quito,La Habana,4,09:30,14:00,Airbus A320,980.20
+AV913,La Habana,Quito,4,15:45,20:15,Airbus A320,935.50
+AV914,Manta,La Paz,2,07:00,09:30,Airbus A319,800.00
+AV915,La Paz,Manta,2,11:45,14:15,Airbus A319,755.25
+
+

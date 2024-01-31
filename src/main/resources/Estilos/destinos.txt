@@ -1,0 +1,7 @@
+Rio de Janeiro,Brasil
+Barcelona,España
+Toronto,Canada
+Cali,Colombia
+Mexico,Mexico
+La Habana,Cuba
+La Paz,Bolivia
