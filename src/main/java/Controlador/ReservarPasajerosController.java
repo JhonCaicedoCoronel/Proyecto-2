@@ -22,7 +22,7 @@ import modelo.App;
 /**
  * FXML Controller class
  *
- * @author Yumi
+ * @author Danny Lopez
  */
 public class ReservarPasajerosController implements Initializable {
 
